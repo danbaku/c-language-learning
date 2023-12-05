@@ -4,10 +4,11 @@
 
 void menu()
 {
-	printf("*************************\n");
-	printf("*****   1. play    ******\n");
-	printf("*****   0. exit    ******\n");
-	printf("*************************\n");
+	printf("**************************\n");
+	printf("*****  1. 电脑对战  ******\n");
+	printf("*****  2. 双人对战  ******\n");
+	printf("*****  0. 退出游戏  ******\n");
+	printf("**************************\n");
 }
 
 void game()
@@ -51,6 +52,10 @@ void game()
 	}
 }
 
+void people() {
+	
+}
+
 int main()
 {
 	int input = 0;
@@ -63,7 +68,12 @@ int main()
 		switch (input)
 		{
 		case 1:
+			printf("欢迎来到电脑对战\n");
 			game();
+			break;
+		case 2:
+			printf("欢迎来到双人对战\n");
+			people();
 			break;
 		case 0:
 			printf("退出游戏\n");
@@ -77,5 +87,3 @@ int main()
 
 	return 0;
 }
-
-
